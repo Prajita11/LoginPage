@@ -3,24 +3,29 @@
   <head>
     <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Adding Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
   </head>
   <body>
     <div id="container">
       <div class="form-wrap">
         <h1>Login</h1>
-    <form action="">
+    <form action="" method="post">
       <div class="form-group">
         <label for="name">Username</label>
-        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="name" placeholder="Please enter your name">
 
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password">
+        <input type="password" id="password" placeholder="Please enter your password">
         <div class="form-group">
         <a href="" target="_blank">Remember me?</a>
         </div>
       </div>
+      <!-- Adding the CAPTCHA -->
+      <div class="g-recaptcha" data-sitekey="6LfJX4ApAAAAAO-u0CLg7dJspDaYQLRjR8w78qTg"></div>
         <button type="submit" class="btn">Log In</button> 
 
     </form>
